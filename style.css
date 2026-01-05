@@ -1,0 +1,162 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, arial,
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+  color: #202124;
+}
+
+/* 右上のヘッダーエリア */
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* グリッドアイコンボタン */
+.apps-button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.apps-button:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+.apps-button svg {
+  fill: #5f6368;
+  width: 24px;
+  height: 24px;
+}
+
+/* フィルターパネル（Googleアプリメニュー風） */
+.filter-panel {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 280px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: none; /* 初期状態は非表示 */
+  z-index: 100;
+}
+
+.filter-panel.active {
+  display: block;
+}
+
+.filter-section {
+  margin-bottom: 15px;
+}
+
+.filter-section h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.filter-section select,
+.filter-section label {
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ロゴ部分 */
+.logo {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  user-select: none;
+}
+.logo span:nth-child(1) {
+  color: #4285f4;
+}
+.logo span:nth-child(2) {
+  color: #ea4335;
+}
+.logo span:nth-child(3) {
+  color: #fbbc05;
+}
+.logo span:nth-child(4) {
+  color: #4285f4;
+}
+.logo span:nth-child(5) {
+  color: #34a853;
+}
+.logo span:nth-child(6) {
+  color: #ea4335;
+}
+
+/* 検索ボックス */
+.search-container {
+  width: 100%;
+  max-width: 584px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.search-box:hover,
+.search-box:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 34px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.main-btn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 36px;
+  min-width: 54px;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+}
