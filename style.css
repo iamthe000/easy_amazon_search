@@ -91,6 +91,21 @@ header {
   align-items: center;
   font-size: 14px;
   cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.price-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-range input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #dfe1e5;
+  font-size: 16px;
 }
 
 
